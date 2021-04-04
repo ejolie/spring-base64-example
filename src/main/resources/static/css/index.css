@@ -1,0 +1,11 @@
+input[name=imagePath] {
+    width: 500px;
+}
+
+section {
+    margin: 10px;
+}
+
+.imageContainer img {
+    width: 600px;
+}
