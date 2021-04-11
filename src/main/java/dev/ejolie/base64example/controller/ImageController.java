@@ -20,12 +20,7 @@ public class ImageController {
 
     @GetMapping("/base64")
     public ResponseEntity<Base64ResponseDto> getImageToBase64(@RequestParam String imagePath) throws Exception {
-        try {
-            Base64ResponseDto responseDto = imageService.getImageToBase64(imagePath);
-            return ResponseEntity.ok(responseDto);
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw new Exception(e);
-        }
+        Base64ResponseDto responseDto = imageService.getImageToBase64(imagePath);
+        return ResponseEntity.ok(responseDto);
     }
 }
