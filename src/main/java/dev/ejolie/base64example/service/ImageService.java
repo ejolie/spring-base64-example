@@ -21,7 +21,7 @@ public class ImageService {
         String filename = filePath.getFileName().toString();
         String mimeType;
         byte[] bytes;
-        if (FileUtil.isUnSupportedExt(filename)) {
+        if (FileUtil.isUnsupportedExt(filename)) {
             bytes = FileUtil.getByteArrayOfFormat(filePath.toFile(), Constants.EXTENSION_JPEG);
             mimeType = Constants.MIMETYPE_JPEG;
         } else {

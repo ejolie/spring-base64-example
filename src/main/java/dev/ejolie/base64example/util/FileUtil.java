@@ -36,7 +36,7 @@ public final class FileUtil {
         return fileNameMap.getContentTypeFor(filename);
     }
 
-    public static boolean isUnSupportedExt(String filename) throws Exception {
+    public static boolean isUnsupportedExt(String filename) throws Exception {
         return UNSUPPORTED_EXT.contains(getExtension(filename));
     }
 
