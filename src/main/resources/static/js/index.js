@@ -5,7 +5,8 @@ $(function() {
             method: "GET",
             data: {
                 imagePath: $("input[name=imagePath]").val()
-            }
+            },
+            dataType: "json"
         }).done(function(data, textStatus, jqXHR) {
             const { base64Str, mimeType, filename } = data;
             const myImage = $(".myImage");
